@@ -37,7 +37,7 @@ public class Main {
                 } else {
 
                     String input = scanner.next();
-                    if (input.trim().equalsIgnoreCase(EXIT_COMMAND)) break;
+                    if (input.equalsIgnoreCase(EXIT_COMMAND)) break;
 
                 }
 

@@ -8,6 +8,8 @@ public class Main {
 
     private static final String INPUT_PROMPT_FORMAT = "Input any integer in range from %d to %d, or type '%s' to exit.";
 
+    private static final String INPUT_PROMPT_SAMPLES_FORMAT = "Examples: '0', '%s', '0 1', '0 1 2 %1$s'.";
+
     private static final String EXIT_COMMAND = "Exit";
 
     private static final String IS_POWER_OF_TWO_FORMAT = "Number '%d' is a power of two.";
@@ -18,6 +20,7 @@ public class Main {
 
         System.out.println("Hello, PowerOfTwo!");
         System.out.println(String.format(INPUT_PROMPT_FORMAT, 0, Integer.MAX_VALUE, EXIT_COMMAND));
+        System.out.println(String.format(INPUT_PROMPT_SAMPLES_FORMAT, EXIT_COMMAND));
 
         try (Scanner scanner = new Scanner(System.in)) {
 
